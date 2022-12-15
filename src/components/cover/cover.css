@@ -1,0 +1,110 @@
+.cover {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    background-image: url("../../image/cover.jpg");
+
+}
+
+.nav {
+    position: absolute;
+    width: 80%;
+    border-radius: 25px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 30px;
+
+}
+
+.searchBar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+}
+
+.search {
+    width: 80%;
+}
+
+input {
+    width: 50%;
+    border: unset;
+}
+
+input:focus {
+    outline: unset;
+}
+.Date{
+    width: 30%;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+button {
+    width: 50px;
+    height: 50px;
+    border: unset;
+    color: antiquewhite;
+    background-color: blue;
+    font-weight: bold;
+    border: 1px solid gainsboro;
+    border-radius: 100px;
+}
+
+button:hover{
+    background-color: rgb(129, 129, 244);
+}
+label{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        width: 85%;
+        justify-content: center;
+    
+    }
+    .searchBar , .Date{
+        width: 95%;
+        margin: 10px;
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+
+    button {
+        width: 500px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .nav {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    
+    }
+    .searchBar , .Date{
+        width: 85%;
+        margin: 10px;
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+
+    button {
+        width: 300px;
+    }
+}

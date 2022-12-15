@@ -1,0 +1,42 @@
+.main_heading{
+  text-align: center;
+    font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 90px;
+    
+}
+
+.sec_heading{
+    text-align: center;
+    background-color: #f2e9ff;
+    font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+    line-height: 45px;
+    text-transform: none;
+    margin: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main_heading{
+        font-size: 70px;
+        line-height: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .main_heading{
+        font-size: 38px;
+        line-height: 100px;
+    }
+    .sec_heading{
+        letter-spacing: normal;
+        font-size: 10px;
+        
+    }
+  
+}
